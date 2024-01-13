@@ -1,0 +1,93 @@
+#TORTURA
+
+g = 0
+r = 0
+h = 0
+s = 0
+
+#establecemos las distintas variables
+
+print("================")
+print("The sorting Hat have any questions")
+print("================")
+
+print("          ")
+
+print("Q1) Do you like Dawn or Dusk?")
+print("    1) Dawn")
+print("    2) Dusk")
+q = int(input("Select 1 o 2   "))
+if q == 1:
+  g += 1
+  r += 1
+elif q == 2:
+  h += 1
+  s += 1
+else:
+  print("wrong input")
+
+#depende de la respuesta se le suma a una variable o a otra 
+#el += sirve para sumarle a una variable el valor que queramos al q ya tenia
+
+print("================")
+print("       ")
+
+print("Q2) When I’m dead, I want people to remember me as:")
+print("    1) The Good")
+print("    2) The Great")
+print("    3) The Wise")
+print("    4) The Bold")
+
+q = int(input("Select (1 - 4)   "))
+if q == 1:
+  h +=2
+elif q == 2:
+  s +=2
+elif q == 3:
+  r +=2
+elif q == 4:
+  g +=2
+
+else:
+  print("wrong input")
+
+print("================")
+print(" ")
+
+print("Q3) Which kind of instrument most pleases your ear?")
+print("    1) The violin")
+print("    2) The trumpet")
+print("    3) The piano")
+print("    4) The drum")
+
+q = int(input("Select (1 - 4)   "))
+
+if q ==1:
+  s += 4
+elif q ==2:
+  h +=4
+elif q == 3:
+  r +=4
+elif q== 4:
+  g +=4
+else:
+  print("wrong input")
+
+print("================")
+print("  ")
+print("your house of hogwarts is:")
+
+
+max_points = max(g,h,r,s) 
+#segun esta cosa se da un poco mas alante pero por lo que e entendido sirve
+#para seleccionar entre las variables la que tenga el valor mas alto
+
+
+if g== max_points:
+  print("🦁 Gryffindor")
+elif r == max_points:
+  print("🦅 Ravenclaw")
+elif h == max_points:
+  print("🦡 Hufflepuff")
+elif s == max_points:
+  print("🐍 Slytherin")
